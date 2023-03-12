@@ -12,10 +12,21 @@ speech_recognizer = speechsdk.SpeechRecognizer(
     speech_config=speech_config,
     auto_detect_source_language_config=auto_detect_source_language_config, 
     audio_config=audio_config)
+
+myDictonary = {
+    'pt-PT': 'pt-PT-DuarteNeural',
+    'en-US': 'en-US-BrandonNeural'
+}
+# result = speech_recognizer.recognize_once()
+# auto_detect_source_language_result = speechsdk.AutoDetectSourceLanguageResult(speech_recognizer.recognize_once())
+# detected_language = auto_detect_source_language_result.language
+# print(detected_language)
 teste = []
 while not done:
     print("Speak into your microphone.")
-    speech_recognition_result = speech_recognizer.recognize_once_async().get()
+    speech_recognition_result = speech_recognizer.recognize_once()
+    auto_detect_source_language_result = speechsdk.AutoDetectSourceLanguageResult(speech_recognition_result)
+    detected_language = auto_detect_source_language_result.language
     if speech_recognition_result.reason == speechsdk.ResultReason.RecognizedSpeech:
         if speech_recognition_result.text == "Sair.":
             for a in teste:
@@ -23,11 +34,10 @@ while not done:
                 speech_synthesizer.speak_text_async(a).get()
             done = True
         else:
+            speech_config.speech_synthesis_voice_name=myDictonary[detected_language]
+            speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config)
             teste.append(speech_recognition_result.text)
             print("Recognized: {}".format(speech_recognition_result.text))
-            audio_config = speechsdk.audio.AudioOutputConfig(use_default_speaker=True)
-            speech_config.speech_synthesis_voice_name='pt-PT-DuarteNeural'
-            speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config)
             text = speech_recognition_result.text
             speech_synthesis_result = speech_synthesizer.speak_text_async(text).get()
    
