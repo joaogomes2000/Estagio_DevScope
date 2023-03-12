@@ -17,10 +17,6 @@ myDictonary = {
     'pt-PT': 'pt-PT-DuarteNeural',
     'en-US': 'en-US-BrandonNeural'
 }
-# result = speech_recognizer.recognize_once()
-# auto_detect_source_language_result = speechsdk.AutoDetectSourceLanguageResult(speech_recognizer.recognize_once())
-# detected_language = auto_detect_source_language_result.language
-# print(detected_language)
 teste = []
 while not done:
     print("Speak into your microphone.")
