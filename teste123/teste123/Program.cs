@@ -13,7 +13,7 @@ using Microsoft.CognitiveServices.Speech.Speaker;
 class Program
 {
     // This example requires environment variables named "SPEECH_KEY" and "SPEECH_REGION"
-    static string speechKey = "6ce64c8ebbd941098b1a88c77a0dc253";
+    static string speechKey = "5b5e3c7309f84e269d15cd9dabc09342";
     static string speechRegion = "eastus";
 
     // static void OutputSpeechSynthesisResult(SpeechSynthesisResult speechSynthesisResult, string recognizedText)
