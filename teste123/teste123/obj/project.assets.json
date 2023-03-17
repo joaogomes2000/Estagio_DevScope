@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "DetectLanguage/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/DetectLanguage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DetectLanguage.dll": {}
+        }
+      },
       "Microsoft.CognitiveServices.Speech/1.26.0": {
         "type": "package",
         "compile": {
@@ -518,6 +530,19 @@
           "lib/netstandard2.0/NAudio.WinMM.dll": {}
         }
       },
+      "Newtonsoft.Json/12.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "System.Drawing.Common/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -590,7 +615,7 @@
           }
         }
       },
-      "System.Speech/8.0.0-preview.1.23110.8": {
+      "System.Speech/8.0.0-preview.2.23128.3": {
         "type": "package",
         "compile": {
           "lib/net6.0/System.Speech.dll": {
@@ -615,6 +640,19 @@
     }
   },
   "libraries": {
+    "DetectLanguage/1.0.0": {
+      "sha512": "m0TCxHYBoL5RKwz6yfLlKbzJ2HYVoQtc3QnSzewtu6Sxg6KrreKgvs/fS+F85a1uiv0eXckOalDapdvaDMHdFw==",
+      "type": "package",
+      "path": "detectlanguage/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "detectlanguage.1.0.0.nupkg.sha512",
+        "detectlanguage.nuspec",
+        "lib/netstandard2.0/DetectLanguage.dll"
+      ]
+    },
     "Microsoft.CognitiveServices.Speech/1.26.0": {
       "sha512": "vGZAx5iFQnMW9RSbgrR1hPrWg3/bePU0dxHmNeqGLPiH7/RZldHmqWdE2Sa7PD2/o/FPzGr6bVgAEcuiRg+dnQ==",
       "type": "package",
@@ -1134,6 +1172,45 @@
         "naudio.winmm.nuspec"
       ]
     },
+    "Newtonsoft.Json/12.0.1": {
+      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.pdb",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.pdb",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.pdb",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.pdb",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.pdb",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
     "System.Drawing.Common/5.0.1": {
       "sha512": "3IN8zWk395Qu+7wnoTbebEjdP3izZBBKAahgWuC0jp9tCgTdUFN6KsrqQl0I3L+ptZD/LvwKjgFp1u+x3+p+DA==",
       "type": "package",
@@ -1276,10 +1353,10 @@
         "version.txt"
       ]
     },
-    "System.Speech/8.0.0-preview.1.23110.8": {
-      "sha512": "EJBdZgvqJUqj46PKBinovDau8TdI819hS1hfPHSPrWvdJMutXVY2UiYR8hLkFaBQJobTkDVRBSwiunlEMdWfkg==",
+    "System.Speech/8.0.0-preview.2.23128.3": {
+      "sha512": "KoOh2M2V6icJuTZWE0LRx2SiSCvcEI9tlL9Ho2YLaYJUiuZZ3GlYA98IVFukwEznH9yGnnWWSNFGBh2F2hy0Pg==",
       "type": "package",
-      "path": "system.speech/8.0.0-preview.1.23110.8",
+      "path": "system.speech/8.0.0-preview.2.23128.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1303,7 +1380,7 @@
         "runtimes/win/lib/net7.0/System.Speech.xml",
         "runtimes/win/lib/net8.0/System.Speech.dll",
         "runtimes/win/lib/net8.0/System.Speech.xml",
-        "system.speech.8.0.0-preview.1.23110.8.nupkg.sha512",
+        "system.speech.8.0.0-preview.2.23128.3.nupkg.sha512",
         "system.speech.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1311,10 +1388,11 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DetectLanguage >= 1.0.0",
       "Microsoft.CognitiveServices.Speech >= 1.26.0",
       "NAudio >= 2.1.0",
       "NAudio.WaveFormRenderer >= 2.0.0",
-      "System.Speech >= 8.0.0-preview.1.23110.8"
+      "System.Speech >= 8.0.0-preview.2.23128.3"
     ]
   },
   "packageFolders": {
@@ -1362,6 +1440,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DetectLanguage": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.CognitiveServices.Speech": {
             "target": "Package",
             "version": "[1.26.0, )"
@@ -1376,7 +1458,7 @@
           },
           "System.Speech": {
             "target": "Package",
-            "version": "[8.0.0-preview.1.23110.8, )"
+            "version": "[8.0.0-preview.2.23128.3, )"
           }
         },
         "imports": [

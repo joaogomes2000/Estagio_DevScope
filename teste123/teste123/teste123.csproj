@@ -8,10 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DetectLanguage" Version="1.0.0" />
     <PackageReference Include="Microsoft.CognitiveServices.Speech" Version="1.26.0" />
     <PackageReference Include="NAudio" Version="2.1.0" />
     <PackageReference Include="NAudio.WaveFormRenderer" Version="2.0.0" />
-    <PackageReference Include="System.Speech" Version="8.0.0-preview.1.23110.8" />
+    <PackageReference Include="System.Speech" Version="8.0.0-preview.2.23128.3" />
   </ItemGroup>
 
 </Project>

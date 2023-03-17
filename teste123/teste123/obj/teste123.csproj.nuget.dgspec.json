@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DetectLanguage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.CognitiveServices.Speech": {
               "target": "Package",
               "version": "[1.26.0, )"
@@ -59,7 +63,7 @@
             },
             "System.Speech": {
               "target": "Package",
-              "version": "[8.0.0-preview.1.23110.8, )"
+              "version": "[8.0.0-preview.2.23128.3, )"
             }
           },
           "imports": [

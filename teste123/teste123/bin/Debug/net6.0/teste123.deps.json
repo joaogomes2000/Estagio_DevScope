@@ -8,13 +8,25 @@
     ".NETCoreApp,Version=v6.0": {
       "teste123/1.0.0": {
         "dependencies": {
+          "DetectLanguage": "1.0.0",
           "Microsoft.CognitiveServices.Speech": "1.26.0",
           "NAudio": "2.1.0",
           "NAudio.WaveFormRenderer": "2.0.0",
-          "System.Speech": "8.0.0-preview.1.23110.8"
+          "System.Speech": "8.0.0-preview.2.23128.3"
         },
         "runtime": {
           "teste123.dll": {}
+        }
+      },
+      "DetectLanguage/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DetectLanguage.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.CognitiveServices.Speech/1.26.0": {
@@ -569,6 +581,14 @@
           }
         }
       },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
       "System.Drawing.Common/5.0.1": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
@@ -601,11 +621,11 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
-      "System.Speech/8.0.0-preview.1.23110.8": {
+      "System.Speech/8.0.0-preview.2.23128.3": {
         "runtime": {
           "lib/net6.0/System.Speech.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "8.0.23.11008"
+            "fileVersion": "8.0.23.12803"
           }
         },
         "runtimeTargets": {
@@ -613,7 +633,7 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "8.0.23.11008"
+            "fileVersion": "8.0.23.12803"
           }
         }
       }
@@ -624,6 +644,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DetectLanguage/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m0TCxHYBoL5RKwz6yfLlKbzJ2HYVoQtc3QnSzewtu6Sxg6KrreKgvs/fS+F85a1uiv0eXckOalDapdvaDMHdFw==",
+      "path": "detectlanguage/1.0.0",
+      "hashPath": "detectlanguage.1.0.0.nupkg.sha512"
     },
     "Microsoft.CognitiveServices.Speech/1.26.0": {
       "type": "package",
@@ -702,6 +729,13 @@
       "path": "naudio.winmm/2.1.0",
       "hashPath": "naudio.winmm.2.1.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
     "System.Drawing.Common/5.0.1": {
       "type": "package",
       "serviceable": true,
@@ -723,12 +757,12 @@
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
-    "System.Speech/8.0.0-preview.1.23110.8": {
+    "System.Speech/8.0.0-preview.2.23128.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EJBdZgvqJUqj46PKBinovDau8TdI819hS1hfPHSPrWvdJMutXVY2UiYR8hLkFaBQJobTkDVRBSwiunlEMdWfkg==",
-      "path": "system.speech/8.0.0-preview.1.23110.8",
-      "hashPath": "system.speech.8.0.0-preview.1.23110.8.nupkg.sha512"
+      "sha512": "sha512-KoOh2M2V6icJuTZWE0LRx2SiSCvcEI9tlL9Ho2YLaYJUiuZZ3GlYA98IVFukwEznH9yGnnWWSNFGBh2F2hy0Pg==",
+      "path": "system.speech/8.0.0-preview.2.23128.3",
+      "hashPath": "system.speech.8.0.0-preview.2.23128.3.nupkg.sha512"
     }
   }
 }
