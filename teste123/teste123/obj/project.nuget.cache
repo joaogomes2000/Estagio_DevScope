@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MDScbhZc6Qpe6BpB3RIGxO6dmQue7zcYkXt8thPE32hVeujhYeAuhwZI883dcLyOf7GSxVkTZXGERbMUioyOKQ==",
+  "dgSpecHash": "9an30BtImFxfgQ9lY1GvWVvYnbQCUS947zXknhpc0R5+qNlmTZ30ezEAUZOkWSNtyrgrpPP/6vaOTeLs33vjIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\teste123\\teste123\\teste123.csproj",
+  "projectFilePath": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\Estágio_DevScope\\teste123\\teste123\\teste123.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joao_\\.nuget\\packages\\microsoft.cognitiveservices.speech\\1.26.0\\microsoft.cognitiveservices.speech.1.26.0.nupkg.sha512",
     "C:\\Users\\joao_\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

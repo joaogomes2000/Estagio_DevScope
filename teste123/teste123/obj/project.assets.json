@@ -1324,11 +1324,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\teste123\\teste123\\teste123.csproj",
+      "projectUniqueName": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\Estágio_DevScope\\teste123\\teste123\\teste123.csproj",
       "projectName": "teste123",
-      "projectPath": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\teste123\\teste123\\teste123.csproj",
+      "projectPath": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\Estágio_DevScope\\teste123\\teste123\\teste123.csproj",
       "packagesPath": "C:\\Users\\joao_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\teste123\\teste123\\obj\\",
+      "outputPath": "C:\\Users\\joao_\\OneDrive\\Ambiente de Trabalho\\Estágio_DevScope\\teste123\\teste123\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\SDK\\NuGetPackages"
