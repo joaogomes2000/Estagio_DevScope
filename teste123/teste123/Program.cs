@@ -13,8 +13,8 @@ using Microsoft.CognitiveServices.Speech.Speaker;
 class Program
 {
     // This example requires environment variables named "SPEECH_KEY" and "SPEECH_REGION"
-    static string speechKey = "f837b896af1646f58390f977edcfeed4";
-    static string speechRegion = "northeurope";
+    static string speechKey = "6ce64c8ebbd941098b1a88c77a0dc253";
+    static string speechRegion = "eastus";
 
     // static void OutputSpeechSynthesisResult(SpeechSynthesisResult speechSynthesisResult, string recognizedText)
     //{
@@ -94,12 +94,12 @@ class Program
                     Console.WriteLine($"Recognized: {whatHasUserSpoken.Result.Text}");
                    
                     var autoDetectSourceLanguageResult = AutoDetectSourceLanguageResult.FromResult(whatHasUserSpoken.Result);
-                    var speakenVoice = synthesizer.GetVoicesAsync(autoDetectSourceLanguageResult.Language.ToString()).Result;
+                   
                     // var maleVoice = speakenVoice.Voices.Where(voice => voice.VoiceType == (SynthesisVoiceType)VoiceGender.Male).ToList();
-                    var maleVoice = synthesizer.GetVoicesAsync(autoDetectSourceLanguageResult.Language).Result.Voices[0];
+                    var speackerVoice = synthesizer.GetVoicesAsync(autoDetectSourceLanguageResult.Language).Result.Voices[0];
                     
                    // Console.WriteLine(maleVoice);
-                    speechConfig.SpeechSynthesisVoiceName = maleVoice.Name;
+                    speechConfig.SpeechSynthesisVoiceName = speackerVoice.Name;
 
 
                     await SpeakWhileEar(whatHasUserSpoken.Result.Text, speechConfig, enumerator);
