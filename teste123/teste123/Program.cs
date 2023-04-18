@@ -13,8 +13,8 @@ using Microsoft.CognitiveServices.Speech.Speaker;
 class Program
 {
     // This example requires environment variables named "SPEECH_KEY" and "SPEECH_REGION"
-    static string speechKey = "5b5e3c7309f84e269d15cd9dabc09342";
-    static string speechRegion = "eastus";
+    static string speechKey = "3335277541e047589ad1f59ea420b924";
+    static string speechRegion = "westeurope";
 
     // static void OutputSpeechSynthesisResult(SpeechSynthesisResult speechSynthesisResult, string recognizedText)
     //{
@@ -38,19 +38,24 @@ class Program
     //            break;
     //    }
     //}
-
-    async static Task SpeakWhileEar(string whatHasUserSpoken, SpeechConfig speechConfig, NAudio.CoreAudioApi.MMDeviceEnumerator enumerator ) // = what has user spoken
+    public static void MicrophoneMute(bool muted, NAudio.CoreAudioApi.MMDeviceEnumerator microphoneMute)
     {
-        
-        var commDevice = enumerator.GetDefaultAudioEndpoint(DataFlow.Capture, Role.Communications);
-       
+        var commDevice = microphoneMute.GetDefaultAudioEndpoint(DataFlow.Capture, Role.Communications);
+        commDevice.AudioEndpointVolume.Mute = muted;
+    }
+
+    async static Task SpeakWhatUserHasSopken(string whatHasUserSpoken, SpeechConfig speechConfig) // = what has user spoken
+    {
+        using var microphoneMute = new NAudio.CoreAudioApi.MMDeviceEnumerator();
+        // var commDevice = microphoneMute.GetDefaultAudioEndpoint(DataFlow.Capture, Role.Communications);
+
         //var speechConfig = SpeechConfig.FromSubscription(speechKey, speechRegion);
         //speechConfig.SpeechSynthesisVoiceName = "en-US-JennyNeural";
         using (var speechSynthesizer = new Microsoft.CognitiveServices.Speech.SpeechSynthesizer(speechConfig))
         {
-            commDevice.AudioEndpointVolume.Mute = true;
+            MicrophoneMute(true, microphoneMute);
             var speechSynthesisResult = await speechSynthesizer.SpeakTextAsync(whatHasUserSpoken);
-            commDevice.AudioEndpointVolume.Mute = false;
+            MicrophoneMute(false, microphoneMute);
         }
     }
 
@@ -58,15 +63,18 @@ class Program
     async static Task Main(string[] args)
     {
 
-        using var enumerator = new NAudio.CoreAudioApi.MMDeviceEnumerator();
+       
+
         var speechConfig = SpeechConfig.FromSubscription(speechKey, speechRegion);
+
        // speechConfig.SpeechRecognitionLanguage = "en-US";
         var autoDetectSourceLanguageConfig = AutoDetectSourceLanguageConfig.FromLanguages(new string[] { "en-US", "pt-PT", "fr-FR", "es-ES" });
+
         var synthesizer = new Microsoft.CognitiveServices.Speech.SpeechSynthesizer(speechConfig);
+
         // config.SetProperty(PropertyId.SpeechServiceConnection_LanguageIdMode, "Continuous");
         speechConfig.SetProperty(PropertyId.SpeechServiceConnection_LanguageIdMode, "Continuous");
 
-        using var audioConfig = AudioConfig.FromDefaultMicrophoneInput();
        // using  var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
         var stopRecognition = new TaskCompletionSource<int>();
 
@@ -88,25 +96,25 @@ class Program
 
                 // Handler for the Recognized event, which is raised when the speech recognizer transcribes speech
                 speechRecognizer.Recognized += async (s, whatHasUserSpoken) =>
-            {
-                if (whatHasUserSpoken.Result.Reason == ResultReason.RecognizedSpeech)
                 {
-                    Console.WriteLine($"Recognized: {whatHasUserSpoken.Result.Text}");
+                    if (whatHasUserSpoken.Result.Reason == ResultReason.RecognizedSpeech)
+                    {
+                        Console.WriteLine($"Recognized: {whatHasUserSpoken.Result.Text}");
                    
-                    var autoDetectSourceLanguageResult = AutoDetectSourceLanguageResult.FromResult(whatHasUserSpoken.Result);
+                        var autoDetectSourceLanguageResult = AutoDetectSourceLanguageResult.FromResult(whatHasUserSpoken.Result);
                    
-                    // var maleVoice = speakenVoice.Voices.Where(voice => voice.VoiceType == (SynthesisVoiceType)VoiceGender.Male).ToList();
-                    var speackerVoice = synthesizer.GetVoicesAsync(autoDetectSourceLanguageResult.Language).Result.Voices[0];
+                        // var maleVoice = speakenVoice.Voices.Where(voice => voice.VoiceType == (SynthesisVoiceType)VoiceGender.Male).ToList();
+                        var speackerVoice = synthesizer.GetVoicesAsync(autoDetectSourceLanguageResult.Language).Result.Voices[0];
                     
-                   // Console.WriteLine(maleVoice);
-                    speechConfig.SpeechSynthesisVoiceName = speackerVoice.Name;
+                       // Console.WriteLine(maleVoice);
+                        speechConfig.SpeechSynthesisVoiceName = speackerVoice.Name;
 
 
-                    await SpeakWhileEar(whatHasUserSpoken.Result.Text, speechConfig, enumerator);
-                    //Console.WriteLine(autoDetectSourceLanguageResult.Language);
-                    Console.WriteLine("Speak something >");
-                }
-            };
+                        await SpeakWhatUserHasSopken(whatHasUserSpoken.Result.Text, speechConfig);
+                        //Console.WriteLine(autoDetectSourceLanguageResult.Language);
+                        Console.WriteLine("Speak something >");
+                    }
+                };
 
 
 
@@ -122,13 +130,13 @@ class Program
                         Console.WriteLine($"CANCELED: Did you set the speech resource key and region values?");
                     }
 
-                    stopRecognition.TrySetResult(0);
+                    stopRecognition.TrySetResult(0); //?
                 };
 
                 // Handler for the SessionStopped event, which is raised when the speech recognition session is stopped
                 speechRecognizer.SessionStopped += (s, e) =>
                 {
-                    Console.WriteLine("\n    Session stopped event.");
+                    Console.WriteLine("\n Session stopped event.");
                     stopRecognition.TrySetResult(0);
                 };
 
