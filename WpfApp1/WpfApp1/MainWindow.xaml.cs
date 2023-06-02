@@ -433,6 +433,9 @@
                                                             hourText = null;
                                                             id = 0;
                                                             timespent = 0;
+                                                            DayLabel.Content = $"Day: ";
+                                                            MonthLabel.Content = $"Month: ";
+                                                            HourLabel.Content = $"Hour: ";
                                                             data.ItemsSource = GetOriginalData(filePath);
                                                         }
                                                            
