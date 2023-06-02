@@ -37,7 +37,7 @@
             // Your CLU project name and deployment name.
             static string cluProjectName = "testeLUIS2";
             static string cluDeploymentName = "LUISTESTE";
-            string filePath = @"C:\Users\joao_\OneDrive\Ambiente de Trabalho\teste160523\teste160523\jsonviewer.json";
+            string filePath = @"C:\Users\joao_\OneDrive\Ambiente de Trabalho\Estágio_DevScope\WpfApp1\jsonviewer.json";
             public int id = 0;
 
             private readonly IntentRecognizer intentRecognizer;
@@ -353,6 +353,7 @@
                                                 {
                                                    
                                                     dayText = Int32.Parse(match.Value).ToString();
+                                                        DayLabel.Content = $"Day: {dayText}";
                                                     if(monthtext == null)
                                                     {
                                                         await SpeakWhatUserHasSopken("Wich month ?", config);
@@ -364,17 +365,19 @@
 
                                             case "month":
                                                 monthtext = text;
+                                                MonthLabel.Content = $"Month: {monthtext}";
                                               //  Console.WriteLine(monthtext.Replace(".", ""));
-                                              if(hourText == null)
-                                                    {
-                                                        await SpeakWhatUserHasSopken("Wich hour ?", config);
-                                                    }
+                                                if(hourText == null)
+                                                {
+                                                    await SpeakWhatUserHasSopken("Wich hour ?", config);
+                                                }
                                                 //   MessageBox.Show("wich hour ?");
                                                 break;
 
                                             case "hour":
                                                 
                                                 hourText = text;
+                                                HourLabel.Content = $"Hour: {hourText}";
                                                     // MessageBox.Show(hourText);
                                                     if (dayText == null)
                                                     {

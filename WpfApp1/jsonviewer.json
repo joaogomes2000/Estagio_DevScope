@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "Arkanoid Room (1..3)",
+    "RoomAlias": "arkanoid-room-(1..3)",
+    "Email": "arkanoid@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      },
+      {
+        "Subject": "João Gomes",
+        "Organizer": "João Gomes",
+        "Start": 1699088400000,
+        "End": 1699124400000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 2,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "Auditorium (6..35)",
+    "RoomAlias": "auditorium-(6..35)",
+    "Email": "auditorium@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Jose Antonio Silva ",
+        "Organizer": "Jose Antonio Silva",
+        "Start": 1685367000000,
+        "End": 1685376000000,
+        "Private": false
+      },
+      {
+        "Subject": "Jose Antonio Silva ",
+        "Organizer": "Jose Antonio Silva",
+        "Start": 1685521800000,
+        "End": 1685550000000,
+        "Private": false
+      },
+      {
+        "Subject": "Jessica Benedecti ",
+        "Organizer": "Jessica Benedecti",
+        "Start": 1685694600000,
+        "End": 1685707200000,
+        "Private": false
+      },
+      {
+        "Subject": "Jose Antonio Silva ",
+        "Organizer": "Jose Antonio Silva",
+        "Start": 1685971800000,
+        "End": 1685980800000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 3,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "ChuckieEgg Room (1..3)",
+    "RoomAlias": "chuckieegg-room-(1..3)",
+    "Email": "chuckieegg@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 4,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "PacMan Room (6..12)",
+    "RoomAlias": "pacman-room-(6..12)",
+    "Email": "pacman@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 5,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "Pang Room (2..4)",
+    "RoomAlias": "pang-room-(2..4)",
+    "Email": "pang@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 6,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "SpaceInvaders A (4..7)",
+    "RoomAlias": "spaceinvaders-a-(4..7)",
+    "Email": "spaceinvaders@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 7,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "SpaceInvaders B (4..7)",
+    "RoomAlias": "spaceinvaders-b-(4..7)",
+    "Email": "spaceinvaders-b@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 8,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "SpaceInvaders C (4..7)",
+    "RoomAlias": "spaceinvaders-c-(4..7)",
+    "Email": "spaceinvaders-c@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 9,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "SpaceInvaders D (4..7)",
+    "RoomAlias": "spaceinvaders-d-(4..7)",
+    "Email": "spaceinvaders-d@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 10,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "Tetris Room (Solo)",
+    "RoomAlias": "tetris-room-(solo)",
+    "Email": "tetris@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 11,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "Tron Room (3..7)",
+    "RoomAlias": "tron-room-(3..7)",
+    "Email": "tron@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  },
+  {
+    "id": 12,
+    "Roomlist": "Passos Manuel 223",
+    "Name": "Zelda Room (2..5)",
+    "RoomAlias": "zelda-room-(2..5)",
+    "Email": "zelda@devscope.net",
+    "Appointments": [
+      {
+        "Subject": "Joana Barbosa ",
+        "Organizer": "Joana Barbosa",
+        "Start": 1685694600000,
+        "End": 1685727000000,
+        "Private": false
+      }
+    ],
+    "Busy": false
+  }
+]
