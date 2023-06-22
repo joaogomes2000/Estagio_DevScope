@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
-      "Microsoft.CognitiveServices.Speech/1.28.0": {
+      "Microsoft.CognitiveServices.Speech/1.29.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
@@ -598,10 +598,10 @@
     }
   },
   "libraries": {
-    "Microsoft.CognitiveServices.Speech/1.28.0": {
-      "sha512": "b8HiGDEW9qsKQmP/uYEG+I8T1viaVUTIhcBxXABONCcIWG/d9UyH8BHi+N80ha1GXyyVCKnlUFvqqrv5SFykzw==",
+    "Microsoft.CognitiveServices.Speech/1.29.0": {
+      "sha512": "gHLToO6ROBYhYsDlTEgXBy99jc2PfdQTrqWp91AtUN5poBoh6u0x8rZCDZSHvITDQfM2JNlNCOVYDTYFltujhA==",
       "type": "package",
-      "path": "microsoft.cognitiveservices.speech/1.28.0",
+      "path": "microsoft.cognitiveservices.speech/1.29.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -634,6 +634,7 @@
         "build/native/ARM64/Release/Microsoft.CognitiveServices.Speech.core.lib",
         "build/native/Microsoft.CognitiveServices.Speech.targets",
         "build/native/Win32/Release/Microsoft.CognitiveServices.Speech.core.lib",
+        "build/native/include/c_api/CMakeLists.txt",
         "build/native/include/c_api/azac_api_c_common.h",
         "build/native/include/c_api/azac_api_c_diagnostics.h",
         "build/native/include/c_api/azac_api_c_error.h",
@@ -679,12 +680,14 @@
         "build/native/include/c_api/speechapi_c_speech_config.h",
         "build/native/include/c_api/speechapi_c_speech_recognition_model.h",
         "build/native/include/c_api/speechapi_c_speech_translation_config.h",
+        "build/native/include/c_api/speechapi_c_speech_translation_model.h",
         "build/native/include/c_api/speechapi_c_synthesizer.h",
         "build/native/include/c_api/speechapi_c_translation_recognizer.h",
         "build/native/include/c_api/speechapi_c_translation_result.h",
         "build/native/include/c_api/speechapi_c_user.h",
         "build/native/include/c_api/spxdebug.h",
         "build/native/include/c_api/spxerror.h",
+        "build/native/include/cxx_api/CMakeLists.txt",
         "build/native/include/cxx_api/azac_api_cxx_common.h",
         "build/native/include/cxx_api/speechapi_cxx.h",
         "build/native/include/cxx_api/speechapi_cxx_audio_config.h",
@@ -766,6 +769,7 @@
         "build/native/include/cxx_api/speechapi_cxx_speech_synthesis_word_boundary_eventargs.h",
         "build/native/include/cxx_api/speechapi_cxx_speech_synthesizer.h",
         "build/native/include/cxx_api/speechapi_cxx_speech_translation_config.h",
+        "build/native/include/cxx_api/speechapi_cxx_speech_translation_model.h",
         "build/native/include/cxx_api/speechapi_cxx_string_helpers.h",
         "build/native/include/cxx_api/speechapi_cxx_synthesis_voices_result.h",
         "build/native/include/cxx_api/speechapi_cxx_translation_eventargs.h",
@@ -803,7 +807,7 @@
         "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.xml",
         "lib/uap10.0/Microsoft.CognitiveServices.Speech.csharp.dll",
         "lib/uap10.0/Microsoft.CognitiveServices.Speech.csharp.xml",
-        "microsoft.cognitiveservices.speech.1.28.0.nupkg.sha512",
+        "microsoft.cognitiveservices.speech.1.29.0.nupkg.sha512",
         "microsoft.cognitiveservices.speech.nuspec",
         "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.core.so",
         "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.extension.audio.sys.so",
@@ -1330,7 +1334,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "Microsoft.CognitiveServices.Speech >= 1.28.0",
+      "Microsoft.CognitiveServices.Speech >= 1.29.0",
       "NAudio >= 2.1.0",
       "Newtonsoft.Json >= 13.0.3",
       "System.Text.Json >= 8.0.0-preview.4.23259.5"
@@ -1383,7 +1387,7 @@
         "dependencies": {
           "Microsoft.CognitiveServices.Speech": {
             "target": "Package",
-            "version": "[1.28.0, )"
+            "version": "[1.29.0, )"
           },
           "NAudio": {
             "target": "Package",
@@ -1417,7 +1421,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

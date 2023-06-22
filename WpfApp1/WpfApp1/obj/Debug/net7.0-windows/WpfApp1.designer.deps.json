@@ -6,43 +6,43 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "Microsoft.CognitiveServices.Speech/1.28.0": {
+      "Microsoft.CognitiveServices.Speech/1.29.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
-            "assemblyVersion": "1.28.0.28",
-            "fileVersion": "1.28.0.28"
+            "assemblyVersion": "1.29.0.28",
+            "fileVersion": "1.29.0.28"
           }
         },
         "runtimeTargets": {
           "runtimes/linux-arm/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
             "rid": "linux-arm",
             "assetType": "runtime",
-            "assemblyVersion": "1.28.0.28",
-            "fileVersion": "1.28.0.28"
+            "assemblyVersion": "1.29.0.28",
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/linux-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
             "rid": "linux-arm64",
             "assetType": "runtime",
-            "assemblyVersion": "1.28.0.28",
-            "fileVersion": "1.28.0.28"
+            "assemblyVersion": "1.29.0.28",
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/linux-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
             "rid": "linux-x64",
             "assetType": "runtime",
-            "assemblyVersion": "1.28.0.28",
-            "fileVersion": "1.28.0.28"
+            "assemblyVersion": "1.29.0.28",
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/osx-arm64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
             "rid": "osx-arm64",
             "assetType": "runtime",
-            "assemblyVersion": "1.28.0.28",
-            "fileVersion": "1.28.0.28"
+            "assemblyVersion": "1.29.0.28",
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/osx-x64/lib/netstandard2.0/Microsoft.CognitiveServices.Speech.csharp.dll": {
             "rid": "osx-x64",
             "assetType": "runtime",
-            "assemblyVersion": "1.28.0.28",
-            "fileVersion": "1.28.0.28"
+            "assemblyVersion": "1.29.0.28",
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/android-arm/native/libMicrosoft.CognitiveServices.Speech.core.so": {
             "rid": "android-arm",
@@ -322,22 +322,22 @@
           "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.core.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.codec.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
             "rid": "win-x64",
@@ -347,7 +347,7 @@
           "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x64/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
             "rid": "win-x64",
@@ -357,22 +357,22 @@
           "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.core.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.codec.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
             "rid": "win-x86",
@@ -382,7 +382,7 @@
           "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win-x86/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
             "rid": "win-x86",
@@ -392,17 +392,17 @@
           "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.core.dll": {
             "rid": "win10-arm",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
             "rid": "win10-arm",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
             "rid": "win10-arm",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
             "rid": "win10-arm",
@@ -412,7 +412,7 @@
           "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
             "rid": "win10-arm",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
             "rid": "win10-arm",
@@ -422,17 +422,17 @@
           "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.core.dll": {
             "rid": "win10-arm64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.audio.sys.dll": {
             "rid": "win10-arm64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.kws.dll": {
             "rid": "win10-arm64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.kws.ort.dll": {
             "rid": "win10-arm64",
@@ -442,7 +442,7 @@
           "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.lu.dll": {
             "rid": "win10-arm64",
             "assetType": "native",
-            "fileVersion": "1.28.0.28"
+            "fileVersion": "1.29.0.28"
           },
           "runtimes/win10-arm64/native/Microsoft.CognitiveServices.Speech.extension.mas.dll": {
             "rid": "win10-arm64",
@@ -639,12 +639,12 @@
     }
   },
   "libraries": {
-    "Microsoft.CognitiveServices.Speech/1.28.0": {
+    "Microsoft.CognitiveServices.Speech/1.29.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-b8HiGDEW9qsKQmP/uYEG+I8T1viaVUTIhcBxXABONCcIWG/d9UyH8BHi+N80ha1GXyyVCKnlUFvqqrv5SFykzw==",
-      "path": "microsoft.cognitiveservices.speech/1.28.0",
-      "hashPath": "microsoft.cognitiveservices.speech.1.28.0.nupkg.sha512"
+      "sha512": "sha512-gHLToO6ROBYhYsDlTEgXBy99jc2PfdQTrqWp91AtUN5poBoh6u0x8rZCDZSHvITDQfM2JNlNCOVYDTYFltujhA==",
+      "path": "microsoft.cognitiveservices.speech/1.29.0",
+      "hashPath": "microsoft.cognitiveservices.speech.1.29.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",

@@ -11,7 +11,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="0" Name="data" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged" Margin="10,10,10,30" Height="185" Width="630">
+        <DataGrid Grid.Row="0" Name="data" Margin="10,10,10,30" Height="185" Width="630">
             <DataGrid.Columns>
                 <!-- Coluna vazia para referência -->
 
@@ -20,7 +20,7 @@
 
         <Button Grid.Row="2" Name="button1" Content="MicrofoneOff" HorizontalAlignment="Center" VerticalAlignment="center" Margin="0,0,0,130" Height="38" Width="130" Click="Button_Click"/>
         <Label Grid.Row="0" Name="DayLabel"  Content="Day: " HorizontalAlignment="Left" Margin="51,206,0,0" VerticalAlignment="Top" />
-        <Label Grid.Row="0" Name="MonthLabel" Content="Month: " HorizontalAlignment="Left" Margin="260,210,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="65"/>
+        <Label Grid.Row="0" Name="MonthLabel" Content="Month: " HorizontalAlignment="Center" Margin="0,210,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" Width="130"/>
         <Label Grid.Row="0" Name="HourLabel" Content="Hour" HorizontalAlignment="Left" Margin="506,212,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

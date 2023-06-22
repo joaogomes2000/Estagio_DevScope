@@ -6,20 +6,6 @@
     "RoomAlias": "arkanoid-room-(1..3)",
     "Email": "arkanoid@devscope.net",
     "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      },
-      {
-        "Subject": "João Gomes",
-        "Organizer": "João Gomes",
-        "Start": 1699088400000,
-        "End": 1699124400000,
-        "Private": false
-      }
     ],
     "Busy": false
   },
@@ -31,31 +17,31 @@
     "Email": "auditorium@devscope.net",
     "Appointments": [
       {
-        "Subject": "Jose Antonio Silva ",
-        "Organizer": "Jose Antonio Silva",
-        "Start": 1685367000000,
-        "End": 1685376000000,
-        "Private": false
-      },
-      {
-        "Subject": "Jose Antonio Silva ",
-        "Organizer": "Jose Antonio Silva",
-        "Start": 1685521800000,
-        "End": 1685550000000,
-        "Private": false
-      },
-      {
         "Subject": "Jessica Benedecti ",
         "Organizer": "Jessica Benedecti",
-        "Start": 1685694600000,
-        "End": 1685707200000,
+        "Start": 1686922200000,
+        "End": 1686936600000,
         "Private": false
       },
       {
         "Subject": "Jose Antonio Silva ",
         "Organizer": "Jose Antonio Silva",
-        "Start": 1685971800000,
-        "End": 1685980800000,
+        "Start": 1687181400000,
+        "End": 1687186800000,
+        "Private": false
+      },
+      {
+        "Subject": "Jose Antonio Silva ",
+        "Organizer": "Jose Antonio Silva",
+        "Start": 1687336200000,
+        "End": 1687364400000,
+        "Private": false
+      },
+      {
+        "Subject": "Alexandre Carreira ",
+        "Organizer": "Alexandre Carreira",
+        "Start": 1687426200000,
+        "End": 1687429800000,
         "Private": false
       }
     ],
@@ -67,15 +53,7 @@
     "Name": "ChuckieEgg Room (1..3)",
     "RoomAlias": "chuckieegg-room-(1..3)",
     "Email": "chuckieegg@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   },
   {
@@ -84,15 +62,7 @@
     "Name": "PacMan Room (6..12)",
     "RoomAlias": "pacman-room-(6..12)",
     "Email": "pacman@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   },
   {
@@ -101,15 +71,7 @@
     "Name": "Pang Room (2..4)",
     "RoomAlias": "pang-room-(2..4)",
     "Email": "pang@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   },
   {
@@ -118,15 +80,7 @@
     "Name": "SpaceInvaders A (4..7)",
     "RoomAlias": "spaceinvaders-a-(4..7)",
     "Email": "spaceinvaders@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   },
   {
@@ -137,14 +91,21 @@
     "Email": "spaceinvaders-b@devscope.net",
     "Appointments": [
       {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
+        "Subject": "Juliana Teixeira ",
+        "Organizer": "Juliana Teixeira",
+        "Start": 1686816000000,
+        "End": 1686844800000,
+        "Private": false
+      },
+      {
+        "Subject": "Alexandre Carreira ",
+        "Organizer": "Alexandre Carreira",
+        "Start": 1687431600000,
+        "End": 1687433400000,
         "Private": false
       }
     ],
-    "Busy": false
+    "Busy": true
   },
   {
     "id": 8,
@@ -154,10 +115,10 @@
     "Email": "spaceinvaders-c@devscope.net",
     "Appointments": [
       {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
+        "Subject": "Alexandre Carreira ",
+        "Organizer": "Alexandre Carreira",
+        "Start": 1687422600000,
+        "End": 1687451400000,
         "Private": false
       }
     ],
@@ -169,15 +130,7 @@
     "Name": "SpaceInvaders D (4..7)",
     "RoomAlias": "spaceinvaders-d-(4..7)",
     "Email": "spaceinvaders-d@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   },
   {
@@ -186,15 +139,7 @@
     "Name": "Tetris Room (Solo)",
     "RoomAlias": "tetris-room-(solo)",
     "Email": "tetris@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   },
   {
@@ -203,15 +148,7 @@
     "Name": "Tron Room (3..7)",
     "RoomAlias": "tron-room-(3..7)",
     "Email": "tron@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   },
   {
@@ -220,15 +157,7 @@
     "Name": "Zelda Room (2..5)",
     "RoomAlias": "zelda-room-(2..5)",
     "Email": "zelda@devscope.net",
-    "Appointments": [
-      {
-        "Subject": "Joana Barbosa ",
-        "Organizer": "Joana Barbosa",
-        "Start": 1685694600000,
-        "End": 1685727000000,
-        "Private": false
-      }
-    ],
+    "Appointments": [],
     "Busy": false
   }
 ]

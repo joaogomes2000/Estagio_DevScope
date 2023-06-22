@@ -47,7 +47,7 @@
           "dependencies": {
             "Microsoft.CognitiveServices.Speech": {
               "target": "Package",
-              "version": "[1.28.0, )"
+              "version": "[1.29.0, )"
             },
             "NAudio": {
               "target": "Package",
@@ -81,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
