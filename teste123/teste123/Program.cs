@@ -16,28 +16,6 @@ class Program
     static string speechKey = "3335277541e047589ad1f59ea420b924";
     static string speechRegion = "westeurope";
 
-    // static void OutputSpeechSynthesisResult(SpeechSynthesisResult speechSynthesisResult, string recognizedText)
-    //{
-    //    switch (speechSynthesisResult.Reason)
-    //    {
-    //        case ResultReason.SynthesizingAudioCompleted:
-    //            Console.WriteLine($"Speech synthesized for text: [{recognizedText}]");
-    //            break;
-    //        case ResultReason.Canceled:
-    //            var cancellation = SpeechSynthesisCancellationDetails.FromResult(speechSynthesisResult);
-    //            Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
-
-    //            if (cancellation.Reason == CancellationReason.Error)
-    //            {
-    //                Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
-    //                Console.WriteLine($"CANCELED: ErrorDetails=[{cancellation.ErrorDetails}]");
-    //                Console.WriteLine($"CANCELED: Did you set the speech resource key and region values?");
-    //            }
-    //            break;
-    //        default:
-    //            break;
-    //    }
-    //}
     public static void MicrophoneMute(bool muted, NAudio.CoreAudioApi.MMDeviceEnumerator microphoneMute)
     {
         var commDevice = microphoneMute.GetDefaultAudioEndpoint(DataFlow.Capture, Role.Communications);
@@ -46,15 +24,18 @@ class Program
 
     async static Task SpeakWhatUserHasSopken(string whatHasUserSpoken, SpeechConfig speechConfig) // = what has user spoken
     {
-        using var microphoneMute = new NAudio.CoreAudioApi.MMDeviceEnumerator();
-        // var commDevice = microphoneMute.GetDefaultAudioEndpoint(DataFlow.Capture, Role.Communications);
+        var microphoneMute = new NAudio.CoreAudioApi.MMDeviceEnumerator();
+
+       // var commDevice = microphoneMute.GetDefaultAudioEndpoint(DataFlow.Capture, Role.Communications);
 
         //var speechConfig = SpeechConfig.FromSubscription(speechKey, speechRegion);
         //speechConfig.SpeechSynthesisVoiceName = "en-US-JennyNeural";
         using (var speechSynthesizer = new Microsoft.CognitiveServices.Speech.SpeechSynthesizer(speechConfig))
         {
             MicrophoneMute(true, microphoneMute);
+           // commDevice.AudioEndpointVolume.Mute = true;
             var speechSynthesisResult = await speechSynthesizer.SpeakTextAsync(whatHasUserSpoken);
+            // commDevice.AudioEndpointVolume.Mute = false;
             MicrophoneMute(false, microphoneMute);
         }
     }
@@ -77,7 +58,8 @@ class Program
 
        // using  var speechRecognizer = new SpeechRecognizer(speechConfig, audioConfig);
         var stopRecognition = new TaskCompletionSource<int>();
-
+       
+           
         using (var audioInput = AudioConfig.FromDefaultMicrophoneInput())
         {
             using (var speechRecognizer = new SpeechRecognizer(speechConfig, autoDetectSourceLanguageConfig, audioInput))
@@ -110,7 +92,7 @@ class Program
                         speechConfig.SpeechSynthesisVoiceName = speackerVoice.Name;
 
 
-                        await SpeakWhatUserHasSopken(whatHasUserSpoken.Result.Text, speechConfig);
+                        await SpeakWhatUserHasSopken(whatHasUserSpoken.Result.Text, speechConfig );
                         //Console.WriteLine(autoDetectSourceLanguageResult.Language);
                         Console.WriteLine("Speak something >");
                     }

@@ -45,13 +45,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
             "DetectLanguage": {
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "Humanizer.Core": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
             "Microsoft.CognitiveServices.Speech": {
               "target": "Package",
-              "version": "[1.26.0, )"
+              "version": "[1.29.0, )"
             },
             "NAudio": {
               "target": "Package",
@@ -61,9 +73,17 @@
               "target": "Package",
               "version": "[2.0.0, )"
             },
+            "NumberToEnglishWordConverter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Numbers_To_Words_Converter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "System.Speech": {
               "target": "Package",
-              "version": "[8.0.0-preview.2.23128.3, )"
+              "version": "[8.0.0-preview.4.23259.5, )"
             }
           },
           "imports": [
@@ -82,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

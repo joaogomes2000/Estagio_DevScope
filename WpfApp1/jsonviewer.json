@@ -6,6 +6,13 @@
     "RoomAlias": "arkanoid-room-(1..3)",
     "Email": "arkanoid@devscope.net",
     "Appointments": [
+      {
+        "Subject": "João Gomes",
+        "Organizer": "João Gomes",
+        "Start": 1686922200000,
+        "End": 1686925800000,
+        "Private": false
+      }
     ],
     "Busy": false
   },
